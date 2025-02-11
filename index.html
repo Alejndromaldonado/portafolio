@@ -302,6 +302,53 @@
                 margin-bottom: 20px;
             }
         }
+            #blogs {
+                margin-top: 50px;
+                padding: 20px;
+                background-color: #f9f9f9;
+            }
+
+            #blogs h2 {
+                text-align: center;
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+
+            .blog-posts {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+                justify-content: space-around;
+            }
+
+            .blog-post {
+                width: 30%;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .blog-post h3 {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+
+            .blog-post p {
+                font-size: 1rem;
+                color: #555;
+            }
+
+            .blog-post a {
+                text-decoration: none;
+                color: #007BFF;
+                transition: color 0.3s;
+            }
+
+            .blog-post a:hover {
+                color: #0056b3;
+            }
+
     </style>
 </head>
 <body>
@@ -311,6 +358,7 @@
             <li><a href="#sobre-mi">Sobre mí</a></li>
             <li><a href="#portafolio">Portafolio</a></li>
             <li><a href="#resume">Resume</a></li>
+            <li><a href="#blogs">Blogs</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </div>
@@ -350,34 +398,111 @@
         </section>
         <section id="portafolio">
             <h2>Portafolio</h2>
-            <div class="projects">
-                <div class="project" onclick="window.open('https://public.tableau.com/app/profile/yarokcy.alejandro.maldonado.alvarez/viz/Accidentesdebus2015-2018ciudaddeLondres/Dashboard1', '_blank')">
-                    <img src="https://i.imgur.com/YEUmDtK.png" alt="Vista previa 1">
-                    <div class="overlay">
-                        <h3>Accidentes de Bus (Londres)</h3>
-                        <p>Una vista exploratoria de los datos sobre el transporte publico en Londres</p>
+        
+            <!-- Análisis de datos con Python -->
+            <div class="category">
+                <h3>Análisis de Datos con Python</h3>
+                <div class="projects">
+                    <div class="project" onclick="window.open('https://github.com/proyecto1', '_blank')">
+                        <img src="imagenes/newplot (13).png" alt="Vista previa Python 1">
+                        <div class="overlay">
+                            <h3>Proyecto 1</h3>
+                            <p>Descripción breve del proyecto en Python</p>
+                        </div>
+                    </div>
+                    <div class="project" onclick="window.open('https://github.com/proyecto2', '_blank')">
+                        <img src="https://via.placeholder.com/250x150" alt="Vista previa Python 2">
+                        <div class="overlay">
+                            <h3>Proyecto 2</h3>
+                            <p>Descripción breve del proyecto en Python</p>
+                        </div>
                     </div>
                 </div>
-                <div class="project" onclick="window.open('https://github.com/', '_blank')">
-                    <img src="imagenes/newplot (13).png" alt="Vista previa 2">
-                    <div class="overlay">
-                        <h3>Proyecto 2</h3>
-                        <p>Código en GitHub</p>
+            </div>
+        
+            <!-- Análisis de datos con Tableau -->
+            <div class="category">
+                <h3>Análisis de Datos con Tableau</h3>
+                <div class="projects">
+                    <div class="project" onclick="window.open('https://public.tableau.com/app/profile/yarokcy.alejandro.maldonado.alvarez/viz/Accidentesdebus2015-2018ciudaddeLondres/Dashboard1', '_blank')">
+                        <img src="https://i.imgur.com/YEUmDtK.png" alt="Vista previa Tableau 1">
+                        <div class="overlay">
+                            <h3>Accidentes de Bus (Londres)</h3>
+                            <p>Exploración de datos de accidentes de buses en Londres</p>
+                        </div>
+                    </div>
+                    <div class="project" onclick="window.open('https://public.tableau.com/', '_blank')">
+                        <img src="https://via.placeholder.com/250x150" alt="Vista previa Tableau 2">
+                        <div class="overlay">
+                            <h3>Proyecto 2</h3>
+                            <p>Análisis con Tableau</p>
+                        </div>
                     </div>
                 </div>
-                <div class="project" onclick="window.open('https://public.tableau.com/', '_blank')">
-                    <img src="https://via.placeholder.com/250x150" alt="Vista previa 3">
-                    <div class="overlay">
-                        <h3>Proyecto 3</h3>
-                        <p>Análisis de Datos</p>
+            </div>
+        
+            <!-- Análisis de datos con SQL -->
+            <div class="category">
+                <h3>Análisis de Datos con SQL</h3>
+                <div class="projects">
+                    <div class="project" onclick="window.open('https://github.com/proyecto-sql1', '_blank')">
+                        <img src="https://via.placeholder.com/250x150" alt="Vista previa SQL 1">
+                        <div class="overlay">
+                            <h3>Proyecto 1</h3>
+                            <p>Consulta y análisis de datos con SQL</p>
+                        </div>
+                    </div>
+                    <div class="project" onclick="window.open('https://github.com/proyecto-sql2', '_blank')">
+                        <img src="https://via.placeholder.com/250x150" alt="Vista previa SQL 2">
+                        <div class="overlay">
+                            <h3>Proyecto 2</h3>
+                            <p>Optimización de bases de datos con SQL</p>
+                        </div>
                     </div>
                 </div>
-                <div class="project" onclick="window.open('https://github.com/', '_blank')">
-                    <img src="https://via.placeholder.com/250x150" alt="Vista previa 4">
-                    <div class="overlay">
-                        <h3>Proyecto 4</h3>
-                        <p>Modelo de Machine Learning</p>
+            </div>
+        
+            <!-- Análisis de datos con Power BI -->
+            <div class="category">
+                <h3>Análisis de Datos con Power BI</h3>
+                <div class="projects">
+                    <div class="project" onclick="window.open('https://github.com/powerbi1', '_blank')">
+                        <img src="https://via.placeholder.com/250x150" alt="Vista previa Power BI 1">
+                        <div class="overlay">
+                            <h3>Proyecto 1</h3>
+                            <p>Visualización de datos con Power BI</p>
+                        </div>
                     </div>
+                    <div class="project" onclick="window.open('https://github.com/powerbi2', '_blank')">
+                        <img src="https://via.placeholder.com/250x150" alt="Vista previa Power BI 2">
+                        <div class="overlay">
+                            <h3>Proyecto 2</h3>
+                            <p>Dashboards interactivos con Power BI</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="blogs">
+            <h2>Blogs Recientes</h2>
+        
+            <div class="blog-posts">
+                <!-- Blog 1 -->
+                <div class="blog-post">
+                    <h3><a href="url-del-blog-1.html">¿Por qué los datos sucios pueden ser más valiosos que los datos limpios?</a></h3>
+                    <p>En este blog, exploramos cómo los datos desordenados o incompletos pueden ser sorprendentemente útiles si se procesan correctamente. ¡Los datos sucios tienen mucho que contar!</p>
+                </div>
+        
+                <!-- Blog 2 -->
+                <div class="blog-post">
+                    <h3><a href="url-del-blog-2.html">¿Cómo pueden los algoritmos predecir tu futuro?</a></h3>
+                    <p>¿Alguna vez te has preguntado cómo los algoritmos pueden predecir el comportamiento humano? Este blog profundiza en cómo las predicciones basadas en datos pueden influir en nuestra vida diaria.</p>
+                </div>
+        
+                <!-- Blog 3 -->
+                <div class="blog-post">
+                    <h3><a href="url-del-blog-3.html">¿Qué tan confiables son los datos que usamos para tomar decisiones?</a></h3>
+                    <p>En este artículo, analizamos la importancia de la calidad de los datos y cómo afecta las decisiones que tomamos, desde las empresariales hasta las gubernamentales.</p>
                 </div>
             </div>
         </section>
